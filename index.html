@@ -24,11 +24,20 @@
             flex-wrap: wrap;
         }
         .flex-item{
-            width: 33%;
-            height: 50%;
-            border: 1px solid black;
-            text-align: center;
-            box-shadow: 10px 10px;
+            @media screen and (min-width: 900px){
+                width: 33%;
+                height: 50%;
+                border: 1px solid black;
+                text-align: center;
+                box-shadow: 10px 10px;
+            }
+            @media screen and (max-width: 900px){
+                width: 90%;
+                height: 80%;
+                border: 1px solid black;
+                text-align: center;
+                box-shadow: 10px 10px;
+            }
         }
         #item-1{
             background-color: lightgoldenrodyellow;
@@ -66,17 +75,17 @@
 <body>
     <div class="flex-container">
         <div class="flex-item" id="item-1">
-            <img src="clock.jpeg" alt="This is the Clock Tower" height="500px">
+            <img src="clock.jpeg" alt="This is the Clock Tower" height="100%" width="80%">
             <h2>Clock Tower</h2>
             <p>The Clock Tower is one of the most beautiful sights in IIT Kharagpur. It looks especially majestic at night.</p>
         </div>
         <div class="flex-item" id="item-2" >
-            <img src="main_building.jpeg" alt="This is the Main Building" height="500px">
+            <img src="main_building.jpeg" alt="This is the Main Building" height="110%" width="82%">
             <h2>Main Building</h2>
             <p>The Main Building is not only beautiful but is also of national and academic importance. It does not fail to give its spectators goosebumps.</p>
         </div>
         <div class="flex-item" id="item-3">
-            <img src="gymk.jpg" alt="This is the GymKhana Backside." height="500px" width="490px">
+            <img src="gymk.jpg" alt="This is the GymKhana Backside." height="120%" width="100%">
             <h2>GymKhana Backside</h2>
             <p>This is the hotspot of IIT Kharagpur. Iykyk &#128521! The Lakeside is beautiful and serene.</p>
         </div>
